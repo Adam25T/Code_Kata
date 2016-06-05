@@ -7,11 +7,15 @@ public class Hours {
 	//Parameterized Constructor
 	Hours(Integer newStartTime, Integer newBedTime, Integer newEndTime){
 		startTime = newStartTime;
+		bedTime = newBedTime;
 	}
 	
 	//get
 	public Integer getStartTime(){
 		return startTime;
+	}
+	public Integer getBedTime(){
+		return bedTime;
 	}
 
 }
