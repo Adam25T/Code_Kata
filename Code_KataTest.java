@@ -7,7 +7,7 @@ public class Code_KataTest {
 	@Test
 	public void WhenHoursIsGivenStartTimeOneItReturnsOne(){
 		Hours hours = new Hours(1, 0, 0);
-		assertEquals("1", hours.getStartTime());
+		assertEquals("1", hours.getStartTime().toString());
 	}
 
 	
