@@ -21,5 +21,26 @@ public class Hours {
 	public Integer getEndTime(){
 		return endTime;
 	}
+	
+	//Set
+	public void setStartTime(Integer newStartTime){
+		startTime = newStartTime;
+	}
+	public void setBedTime(Integer newBedTime){
+		bedTime = newBedTime;
+	}
+	public void setEndTime(Integer newEndTime){
+		endTime = newEndTime;
+	}
+
+	//
+	public Integer getStartToBedHours(){
+		return calculateHoursFromStartToBedTime();
+	}
+	private Integer calculateHoursFromStartToBedTime(){
+		return bedTime - startTime;
+	}
+	
+	
 }
 
