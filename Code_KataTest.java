@@ -15,6 +15,12 @@ public class Code_KataTest {
 		Hours hours = new Hours(1, 2, 0);
 		assertEquals("2", hours.getBedTime().toString());
 	}
+	
+	@Test
+	public void WhenHoursIsGivenEndTimeThreeItReturnsThree(){
+		Hours hours = new Hours(1, 2, 3);
+		assertEquals("3", hours.getEndTime().toString());
+	}
 
 	
 	
