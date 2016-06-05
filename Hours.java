@@ -58,6 +58,13 @@ public class Hours {
 		return result;
 	}
 	
+	public Integer getMidnightToEndHours(){
+		return calculateHoursFromMidnightToEndTime();
+	}
+	private Integer calculateHoursFromMidnightToEndTime(){
+		return endTime - 12;
+	}
+	
 	
 	
 }
