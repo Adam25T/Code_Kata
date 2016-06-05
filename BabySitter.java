@@ -6,6 +6,6 @@ public class BabySitter {
 	}
 	
 	private Integer calculateTotalNightCharge(Integer startToBed, Integer bedToMidnight, Integer midnightToEnd){
-		return 2 + 3 + 4;
+		return (startToBed * 12) + (bedToMidnight * 8) + (midnightToEnd *16);
 	}
 }
