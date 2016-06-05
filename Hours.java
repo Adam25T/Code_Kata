@@ -1,4 +1,4 @@
-
+//Adam Turner
 public class Hours {
 	private Integer startTime;
 	private Integer bedTime;
@@ -11,7 +11,7 @@ public class Hours {
 		endTime = newEndTime;
 	}
 	
-	//get
+	//Get
 	public Integer getStartTime(){
 		return startTime;
 	}
@@ -33,10 +33,11 @@ public class Hours {
 		endTime = newEndTime;
 	}
 
-	//
 	public Integer getStartToBedHours(){
 		return calculateHoursFromStartToBedTime();
 	}
+	//Postcondition: returns the number of hours babysitter should be paid
+	// for from start time to bed time (12$/hr)
 	private Integer calculateHoursFromStartToBedTime(){
 		Integer result = 0;
 		if(startTime < bedTime)
@@ -44,10 +45,11 @@ public class Hours {
 		return result;
 	}
 	
-	//
 	public Integer getBedToMidnightHours(){
 		return calculateHoursFromBedTimeToMidnight();
 	}
+	//Postcondition: returns the number of hours babysitter should be paid for
+	// from bed time to midnight (8$/hr)
 	private Integer calculateHoursFromBedTimeToMidnight(){
 		Integer result = 0; 
 		Integer temp = bedTime;
@@ -58,10 +60,11 @@ public class Hours {
 		return result;
 	}
 	
-	//
 	public Integer getMidnightToEndHours(){
 		return calculateHoursFromMidnightToEndTime();
 	}
+	//Postcondition: returns the number of hours babysitter should be paid for 
+	// from bed time to midnight (16$/hr)
 	private Integer calculateHoursFromMidnightToEndTime(){
 		Integer result = 0;
 		Integer temp = 12;
@@ -70,9 +73,6 @@ public class Hours {
 		if(temp < endTime)
 			result = endTime - temp;
 		return result;
-	}
-	
-	
-	
+	}	
 }
 

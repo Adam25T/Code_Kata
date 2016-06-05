@@ -58,6 +58,9 @@ public class Code_KataTest {
 		assertEquals("0", hours.getMidnightToEndHours().toString());
 	}
 	
+	
+	//mistake made creating this test. Should have had 2*12 + 3*8 + 4*16 instead
+	//of 2 + 3 + 4. I break the test once multiplication is implemented.
 	/*@Test
 	public void BabySitterClassCanAddThreeIntegersToGetASum(){
 		BabySitter babySitter = new BabySitter();
@@ -69,6 +72,13 @@ public class Code_KataTest {
 		Hours hours = new Hours(9, 7, 15);
 		BabySitter babySitter = new BabySitter();
 		assertEquals("72", babySitter.getTotalNightCharge(hours.getStartToBedHours(), hours.getBedToMidnightHours(), hours.getMidnightToEndHours()).toString());
+	}
+	
+	@Test
+	public void CalculateTotalHoursWithMultiplicationOfParametersStart5Bed10End16ShouldGet140() {
+		Hours hours = new Hours(5, 10, 16);
+		BabySitter babySitter = new BabySitter();
+		assertEquals("140", babySitter.getTotalNightCharge(hours.getStartToBedHours(), hours.getBedToMidnightHours(), hours.getMidnightToEndHours()).toString());
 	}
 	
 }
