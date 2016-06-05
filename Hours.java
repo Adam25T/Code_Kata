@@ -8,6 +8,7 @@ public class Hours {
 	Hours(Integer newStartTime, Integer newBedTime, Integer newEndTime){
 		startTime = newStartTime;
 		bedTime = newBedTime;
+		endTime = newEndTime;
 	}
 	
 	//get
@@ -17,6 +18,8 @@ public class Hours {
 	public Integer getBedTime(){
 		return bedTime;
 	}
-
+	public Integer getEndTime(){
+		return endTime;
+	}
 }
 
