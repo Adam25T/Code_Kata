@@ -40,6 +40,11 @@ public class Code_KataTest {
 		assertEquals("4", hours.getBedToMidnightHours().toString());
 	}
 
+	@Test
+	public void CalculateHoursFromBedTimeToMidnightWhereStartTimeIsAfterBedAndMidnightShouldBeZero(){
+		Hours hours = new Hours(14, 9, 0);
+		assertEquals("0", hours.getBedToMidnightHours());
+	}
 	
 	
 }
