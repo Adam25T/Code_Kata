@@ -38,7 +38,10 @@ public class Hours {
 		return calculateHoursFromStartToBedTime();
 	}
 	private Integer calculateHoursFromStartToBedTime(){
-		return bedTime - startTime;
+		Integer result = 0;
+		if(startTime < bedTime)
+			result = bedTime - startTime;
+		return result;
 	}
 	
 	
