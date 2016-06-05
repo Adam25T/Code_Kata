@@ -63,7 +63,13 @@ public class Hours {
 		return calculateHoursFromMidnightToEndTime();
 	}
 	private Integer calculateHoursFromMidnightToEndTime(){
-		return endTime - 12;
+		Integer result = 0;
+		Integer temp = 12;
+		if(12 < startTime)
+			temp = startTime;
+		if(temp < endTime)
+			result = endTime - temp;
+		return result;
 	}
 	
 	
