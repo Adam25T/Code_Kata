@@ -21,6 +21,12 @@ public class Code_KataTest {
 		Hours hours = new Hours(1, 2, 3);
 		assertEquals("3", hours.getEndTime().toString());
 	}
+	
+	@Test
+	public void CalculateHoursFromStartTime7ToBedTimeTenGot3(){
+		Hours hours = new Hours(7, 10, 0);
+		assertEquals("3", hours.getStartToBedHours().toString());
+	}
 
 	
 	
