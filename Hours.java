@@ -44,6 +44,14 @@ public class Hours {
 		return result;
 	}
 	
+	//
+	public Integer getBedToMidnightHours(){
+		return calculateHoursFromBedTimeToMidnight();
+	}
+	private Integer calculateHoursFromBedTimeToMidnight(){
+		return 12 - bedTime;
+	}
+	
 	
 }
 
