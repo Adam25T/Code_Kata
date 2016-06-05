@@ -49,8 +49,15 @@ public class Hours {
 		return calculateHoursFromBedTimeToMidnight();
 	}
 	private Integer calculateHoursFromBedTimeToMidnight(){
-		return 12 - bedTime;
+		Integer result = 0; 
+		Integer temp = bedTime;
+		if(bedTime < startTime)
+			temp = startTime;
+		if(temp < 12)
+			result = 12 - temp;
+		return result;
 	}
+	
 	
 	
 }
