@@ -64,10 +64,4 @@ public class Code_KataTest {
 		assertEquals("9", babySitter.getTotalNightCharge(2, 3, 4).toString());
 	}
 	
-	@Test
-	public void CalculateTotalHoursWithMultiplicationOfParameters() {
-		BabySitter babySitter = new BabySitter();
-		assertEquals("72", babySitter.getTotalNightCharge(9, 7, 15).toString());
-	} 
-	
 }
