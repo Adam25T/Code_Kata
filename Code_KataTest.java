@@ -59,9 +59,12 @@ public class Code_KataTest {
 	}
 	
 	@Test
-	public void BabySitterClassCanAddThreeIntegersToGetASum(){
+	public void CalculateTotalHoursWithMultiplicationOfParameters() {
+		Hours hours = new Hours(9, 7, 15);
 		BabySitter babySitter = new BabySitter();
-		assertEquals("9", babySitter.getTotalNightCharge(2, 3, 4).toString());
+		assertEquals("72", babySitter.getTotalNightCharge(hours.getStartToBedHours(), hours.getBedToMidnightHours(), hours.getMidnightToEndHours()).toString());
 	}
+	
+	
 	
 }
