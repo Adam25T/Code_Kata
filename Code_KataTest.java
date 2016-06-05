@@ -52,5 +52,11 @@ public class Code_KataTest {
 		assertEquals("3", hours.getMidnightToEndHours().toString());
 	}
 	
+	@Test 
+	public void CalculateHoursFromMidnightToEndTimeWhenStartTimeGreaterThanMidnightAndEndTimeShouldBeZero(){
+		Hours hours = new Hours(14, 0, 13);
+		assertEquals("0", hours.getMidnightToEndHours().toString());
+	}
+	
 	
 }
