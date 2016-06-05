@@ -58,5 +58,10 @@ public class Code_KataTest {
 		assertEquals("0", hours.getMidnightToEndHours().toString());
 	}
 	
+	@Test
+	public void BabySitterClassCanAddThreeIntegersToGetASum(){
+		BabySitter babySitter = new BabySitter();
+		assertEquals("9", babySitter.getTotalNightCharge(2, 3, 4));
+	}
 	
 }
