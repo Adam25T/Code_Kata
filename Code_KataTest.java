@@ -61,7 +61,7 @@ public class Code_KataTest {
 	@Test
 	public void BabySitterClassCanAddThreeIntegersToGetASum(){
 		BabySitter babySitter = new BabySitter();
-		assertEquals("9", babySitter.getTotalNightCharge(2, 3, 4));
+		assertEquals("9", babySitter.getTotalNightCharge(2, 3, 4).toString());
 	}
 	
 }
