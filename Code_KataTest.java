@@ -33,6 +33,12 @@ public class Code_KataTest {
 		Hours hours = new Hours(10, 8, 0);
 		assertEquals("0", hours.getStartToBedHours().toString());
 	}
+	
+	@Test 
+	public void CalculateHoursFromBedTime8ToMidnightGot4(){
+		Hours hours = new Hours(0, 8, 0);
+		assertEquals("4", hours.getBedToMidnightHours().toString());
+	}
 
 	
 	
