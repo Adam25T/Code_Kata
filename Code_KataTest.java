@@ -46,5 +46,11 @@ public class Code_KataTest {
 		assertEquals("0", hours.getBedToMidnightHours().toString());
 	}
 	
+	@Test
+	public void CalculateHoursFromMidnightToEndTime15AndGet3(){
+		Hours hours = new Hours(0, 0, 15);
+		assertEquals("3", hours.getMidnightToEndHours().toString());
+	}
+	
 	
 }
